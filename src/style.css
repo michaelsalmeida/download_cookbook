@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Bebas+Neue&family=Poppins&family=Staatliches&family=Teko&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    text-decoration: none;
+}
+body{
+    background-image: url(img/Fundo-page.svg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: auto;
+    padding: 0 200px;
+
+}
+.box-total{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 100vh;
+ 
+}
+.box-text{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box-text h2{
+    font-weight: 500;
+}
+.box-text strong{
+    color: #FF914D;
+}
+.box-text a{
+    background-color:#f78239;
+    font-size: 18px;
+    margin-top: 30px;
+    padding: 5px 50px;
+    width: 200px;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out ;
+
+}
+.box-text a:hover{
+    background-color:  #ff6200;
+}
+
+
+@media (max-width: 950px) {
+    body{
+        padding: 30px;
+    }
+    .box-total{
+        flex-wrap: wrap-reverse;
+        height: auto;
+
+    }
+    .box-text{
+        height: auto;
+        text-align: center;
+        align-items: center;
+    }
+}
